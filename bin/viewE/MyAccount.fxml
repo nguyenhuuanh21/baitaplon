@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerE.MyAccount">
+   <children>
+      <VBox alignment="CENTER" layoutX="-1.0" prefHeight="750.0" prefWidth="230.0" stylesheets="@styles.css">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#HomeE" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="Home" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="HOME" size="25" text="" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menu_calendar" layoutX="10.0" layoutY="568.0" mnemonicParsing="false" onAction="#calendarE" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="CLAENDAR" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="CALENDAR" size="25" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="474.0" mnemonicParsing="false" onAction="#notificationE" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="Notification" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="BELL" size="25" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menu_setting" layoutX="10.0" layoutY="536.0" mnemonicParsing="false" onAction="#MyAccountE" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="SETTING" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="BELL" size="25" text="" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menu_logout" layoutX="10.0" layoutY="505.0" mnemonicParsing="false" onAction="#logout" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="LOGOUT" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="SIGN_OUT" selectionEnd="0" size="25" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="right-side-bo" />
+            <String fx:value="while-bg" />
+         </styleClass>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1200.0" styleClass="while-bg" stylesheets="@styles.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="56.0" prefWidth="251.0" text="DASHBOARD" textFill="#5e7ff1">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="62.0" prefWidth="514.0" />
+<Label fx:id="HelloName" alignment="CENTER" prefHeight="43.0" prefWidth="286.0" text="HELLO : " textFill="#5e7ff1">
+   <font>
+      <Font size="18.0" />
+   </font>
+</Label>
+<FontAwesomeIcon fill="#5e7ff1" glyphName="USER" size="30" />
+
+         </children>
+      </HBox>
+      <AnchorPane layoutX="239.0" layoutY="62.0" prefHeight="678.0" prefWidth="953.0" style="-fx-background-color: white;">
+         <children>
+            <VBox layoutX="234.0" layoutY="64.0" prefHeight="542.0" prefWidth="628.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="204.0" text="Profile detail" textFill="GREY">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="10.0" layoutY="108.0" prefHeight="50.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="50.0" prefWidth="160.0" text="Name" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="name" layoutX="352.0" layoutY="10.0" prefHeight="53.0" prefWidth="394.0" styleClass="bellow-bor" stylesheets="@styles.css" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="155.0" prefHeight="50.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="50.0" prefWidth="160.0" text="Gender" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="gender" layoutX="352.0" layoutY="10.0" prefHeight="53.0" prefWidth="394.0" styleClass="bellow-bor" stylesheets="@styles.css" text="Label" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="202.0" prefHeight="50.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Date Of Birth" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="birth" layoutX="352.0" layoutY="10.0" prefHeight="53.0" prefWidth="394.0" styleClass="bellow-bor" stylesheets="@styles.css" text="Label" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Department" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="department" layoutX="352.0" layoutY="10.0" prefHeight="53.0" prefWidth="394.0" styleClass="bellow-bor" stylesheets="@styles.css" text="Label" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="204.0" text="Contact infor" textFill="GREY">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="10.0" layoutY="249.0" prefHeight="50.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Address" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="address" prefHeight="53.0" prefWidth="394.0" styleClass="bellow-bor" stylesheets="@styles.css" text="Label" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="347.0" prefHeight="50.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Phone Number" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phone" prefHeight="53.0" prefWidth="394.0" styleClass="bellow-bor" stylesheets="@styles.css" text="Label" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="10.0" layoutY="262.0" prefHeight="50.0" prefWidth="204.0" text="Account" textFill="GREY">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="10.0" layoutY="363.0" prefHeight="50.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Email" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="email" prefHeight="53.0" prefWidth="394.0" styleClass="bellow-bor" stylesheets="@styles.css" text="Label" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="464.0" prefHeight="50.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Password" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="password" prefHeight="53.0" prefWidth="394.0" styleClass="bellow-bor" stylesheets="@styles.css" text="Label" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="36.0" layoutY="46.0" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: gray;">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="152.0" fitWidth="153.0" layoutX="-3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="myID" alignment="CENTER" layoutX="55.0" layoutY="213.0" prefHeight="30.0" prefWidth="114.0" text="ID : " />
+            <Button layoutX="447.0" layoutY="633.0" mnemonicParsing="false" onAction="#editProfile" prefHeight="30.0" prefWidth="114.0" style="-fx-border-color: gray;" styleClass="cs-button" stylesheets="@styles.css" text="Edit Profiles" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditProfiles">
+   <children>
+      <VBox alignment="CENTER" layoutX="-1.0" prefHeight="750.0" prefWidth="230.0" stylesheets="@styles.css">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#adminHome" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="Home" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="HOME" size="25" text="" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menu_edit" layoutX="10.0" layoutY="505.0" mnemonicParsing="false" onAction="#adminEmployees" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="USER" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="EDIT" size="25" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menu_department" layoutX="10.0" layoutY="380.0" mnemonicParsing="false" onAction="#adminDepartment" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="DEPARTMENT" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="EDIT" size="25" text="" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menu_calendar" layoutX="10.0" layoutY="568.0" mnemonicParsing="false" onAction="#calendar" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="CLAENDAR" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="CALENDAR" size="25" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="474.0" mnemonicParsing="false" onAction="#adminReport" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="REPORT" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="ARCHIVE" size="25" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menu_setting" layoutX="10.0" layoutY="536.0" mnemonicParsing="false" onAction="#adminSetting" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="SETTING" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="ARCHIVE" size="25" text="" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="menu_logout" layoutX="10.0" layoutY="505.0" mnemonicParsing="false" onAction="#logout" prefHeight="62.0" prefWidth="250.0" styleClass="cs-button" stylesheets="@styles.css" text="LOGOUT" textFill="#5e7ff1">
+               <graphic>
+                  <FontAwesomeIcon fill="#5e7ff1" glyphName="SIGN_OUT" selectionEnd="0" size="25" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="right-side-bo" />
+            <String fx:value="while-bg" />
+         </styleClass>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1200.0" styleClass="while-bg" stylesheets="@styles.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="56.0" prefWidth="251.0" text="DASHBOARD" textFill="#5e7ff1">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="62.0" prefWidth="514.0" />
+            <Label fx:id="HelloName" alignment="CENTER" prefHeight="43.0" prefWidth="286.0" text="HELLO : " textFill="#5e7ff1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="50.0" prefWidth="61.0" style="-fx-border-color: gray;">
+               <children>
+                  <ImageView fx:id="HelloImage" fitHeight="50.0" fitWidth="53.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="239.0" layoutY="62.0" prefHeight="678.0" prefWidth="953.0" style="-fx-background-color: white;">
+         <children>
+            <VBox layoutX="231.0" layoutY="52.0" prefHeight="542.0" prefWidth="584.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="204.0" text="Profile detail" textFill="GREY">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="47.0" prefWidth="695.0">
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="160.0" text="Name" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="settingName" prefHeight="47.0" prefWidth="389.0" styleClass="bellow-bor" stylesheets="@styles.css">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="155.0" prefHeight="47.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="160.0" text="Gender" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="settingGender" prefHeight="50.0" prefWidth="390.0" promptText="Choose your gender" styleClass="bellow-bor" stylesheets="@../../../AAA/src/view/styles.css">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="202.0" prefHeight="47.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Date Of Birth" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="SettingBirth" prefHeight="58.0" prefWidth="391.0" styleClass="bellow-bor" stylesheets="@styles.css" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="47.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Department" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="settingDepartment" prefHeight="50.0" prefWidth="390.0" promptText="Choose department" styleClass="bellow-bor" stylesheets="@../../../AAA/src/view/styles.css">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="204.0" text="Contact infor" textFill="GREY">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="10.0" layoutY="249.0" prefHeight="47.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Address" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="settingAddress" prefHeight="47.0" prefWidth="389.0" styleClass="bellow-bor" stylesheets="@styles.css">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="347.0" prefHeight="47.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Phone Number" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="SettingPhone" prefHeight="47.0" prefWidth="389.0" styleClass="bellow-bor" stylesheets="@styles.css">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></TextField>
+                     </children>
+                  </HBox>
+                  <Label layoutX="10.0" layoutY="296.0" prefHeight="50.0" prefWidth="204.0" text="Account" textFill="GREY">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="47.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Email" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="settingEmail" prefHeight="47.0" prefWidth="389.0" styleClass="bellow-bor" stylesheets="@styles.css">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding></TextField>
+                     </children>
+                  </HBox>
+                  <Label fx:id="settingError" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="318.0" text="This email already exists" textFill="#ff0505" />
+                  <HBox layoutX="10.0" layoutY="444.0" prefHeight="47.0" prefWidth="770.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="160.0" text="Password" textFill="GREY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="settingPassword" prefHeight="47.0" prefWidth="389.0" styleClass="bellow-bor" stylesheets="@styles.css">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="31.0" layoutY="38.0" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: gray;">
+               <children>
+                  <ImageView fx:id="myImage" fitHeight="150.0" fitWidth="150.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+            <Button fx:id="settingSave" layoutX="451.0" layoutY="619.0" mnemonicParsing="false" onAction="#saveInfor" prefHeight="30.0" prefWidth="113.0" style="-fx-border-color: gray;" styleClass="cs-button" stylesheets="@styles.css" text="Save" />
+            <Button fx:id="changeImage" layoutX="65.0" layoutY="196.0" mnemonicParsing="false" onAction="#insertImage" prefHeight="18.0" prefWidth="81.0" style="-fx-border-color: gray;" styleClass="cs-button" stylesheets="@styles.css" text="Change" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

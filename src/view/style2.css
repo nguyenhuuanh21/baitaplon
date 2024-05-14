@@ -1,0 +1,14 @@
+.cs-anchorpane {
+-fx-background-color: linear-gradient(to bottom right, #5E7FF1 50%, #ffffff 50%);
+}
+.cs-text {
+    -fx-background-color: white;
+    -fx-border-color: #5E7FF1;
+    -fx-border-width: 0 0 1 0;
+}
+.cs-button {
+    -fx-background-color: #5E7FF1;
+    -fx-border-radius: 10px;
+}
+
+

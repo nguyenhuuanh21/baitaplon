@@ -1,0 +1,95 @@
+.while-bg{
+	-fx-background-color: white;
+}
+.right-side-bo{
+	-fx-border-color: #6F6F6F;
+	-fx-border-width: 0 1 0 0;
+}
+
+.bellow-bor {
+  -fx-background-color: white;
+  -fx-border-color: #6F6F6F;
+  -fx-border-width: 0 0 1 0;
+}
+
+.button-bg-bor{
+	/*-fx-background-radius:100%;*/
+	-fx-border-color: #5E7FF1;
+}
+.table-view {
+  -fx-border-color: #5E7FF1;  /* Màu viền xanh */
+  -fx-background-color: #ffffff;  /* Màu nền trắng */
+  -fx-padding: 10px;  /* Khoảng cách giữa nội dung và khung viền */
+}
+
+.table-view .column-header-background {
+  -fx-background-color: white;
+}
+
+.table-view .column-header-background .label {
+  -fx-background-color: #5E7FF1;  /* Màu nền xanh cho tiêu đề */
+  -fx-text-fill: #ffffff;  /* Màu chữ trắng cho tiêu đề */
+  -fx-padding: 5px;  /* Khoảng cách giữa chữ và đường viền */
+}
+
+.table-view .column-header-background .filler {
+  -fx-background-color: #00ff00;  /* Màu viền xanh dưới tiêu đề */
+  -fx-padding: 0 0 3px 0;  /* Khoảng cách đường viền dưới tiêu đề */
+}
+.cs-button {
+    -fx-background-color: white;
+}
+
+.cs-button:pressed {
+    -fx-background-color: gray; /* Thay đổi màu nền khi nhấp vào */
+    -fx-background-insets: 0.0, 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0, 0.0, 0.0, 0.0;
+}
+
+.cs-icon{
+	-fx-text-fill: gray;
+}
+.cs1-button {
+    -fx-background-color: white;
+    -fx-border-color: #5E7FF1;
+    -fx-text-fill: #5E7FF1;
+}
+
+.cs1-button:pressed {
+    -fx-background-color: gray; /* Thay đổi màu nền khi nhấp vào */
+    -fx-background-insets: 0.0, 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0, 0.0, 0.0, 0.0;
+}
+.cs2-button {
+    -fx-background-color: white;
+    -fx-border-color: #2ca44e;
+    -fx-text-fill: #2ca44e;
+}
+
+.cs2-button:pressed {
+    -fx-background-color: gray; /* Thay đổi màu nền khi nhấp vào */
+    -fx-background-insets: 0.0, 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0, 0.0, 0.0, 0.0;
+}
+.cs3-button {
+    -fx-background-color: white;
+    -fx-border-color: #ffa500;
+    -fx-text-fill: #ffa500;
+}
+
+.cs3-button:pressed {
+    -fx-background-color: gray; /* Thay đổi màu nền khi nhấp vào */
+    -fx-background-insets: 0.0, 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0, 0.0, 0.0, 0.0;
+}
+.cs4-button {
+    -fx-background-color: white;
+    -fx-border-color: #ff4500;
+    -fx-text-fill: #ff4500;
+}
+
+.cs4-button:pressed {
+    -fx-background-color: gray; /* Thay đổi màu nền khi nhấp vào */
+    -fx-background-insets: 0.0, 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0, 0.0, 0.0, 0.0;
+}
